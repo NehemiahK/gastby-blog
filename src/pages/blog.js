@@ -1,10 +1,12 @@
 import React from 'react'
 import { graphql } from 'gatsby';
 import { Link } from "gatsby"
+import Layout from "../components/layout"
 
 const BlogPage = ({data}) => {
     return (
-        <div>
+        
+            <Layout>
             <h1>Lastest Posts</h1>
             {data.allMarkdownRemark.edges.map(post => (
                 <div key={post.node.id}>
@@ -14,7 +16,7 @@ const BlogPage = ({data}) => {
                     <hr/>
                 </div>
             ))}
-        </div>
+        </Layout>
     )
 }
 

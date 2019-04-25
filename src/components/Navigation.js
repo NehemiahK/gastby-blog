@@ -3,9 +3,9 @@ import { Link } from "gatsby"
 
 const Naviation = () => {
     return (
-        <div>
+        <div id='nav' style={{display:'flex', alignSelf:'flex-end', color:'white', position: 'absolute', right:0}}>
             <div><Link to="/"> Home</Link></div>
-            <div><Link to="/page-2"> Page 2 </Link></div>
+            <div><Link to="/blog"> Blog </Link></div>
         </div>
     )
 }
